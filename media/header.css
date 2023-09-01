@@ -1,0 +1,14 @@
+.header{
+    padding-bottom: 8vh;
+}
+
+.header-title{
+    font-size: 15vh;
+    text-shadow: 4px 4px 8px #858585;
+    font-family: DiabloFont;
+    margin-bottom: 5vh;
+}
+
+.header-text{
+    font-size: 5vh;
+}

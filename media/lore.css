@@ -1,0 +1,35 @@
+.lore-book{
+    background-image: url("images/lore-book.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 55vw;
+    height: 70vh;
+    padding: 2vh 5vw;
+    position: relative;
+}
+
+.lore-book div{
+    width: 30%;
+    display: inline-block;
+    margin: 3vh 2vw;
+    vertical-align: top;
+    color: #85331e;
+    text-shadow: 4px 4px 8px rgb(122, 121, 121);
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.7vh;
+}
+
+.lore-book div span a{
+    color: black;
+    font-weight: bold;
+}
+
+.lore-book div span a:hover{
+    cursor: pointer;
+    transform: translateX(5px) scale(1.1);
+    text-shadow: 4px 4px 8px black;
+}
+

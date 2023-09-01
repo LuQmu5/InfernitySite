@@ -1,0 +1,31 @@
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 15vh;
+    display: flex;
+}
+
+.footer-right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.footer-media img{
+    width: 4vw;
+}

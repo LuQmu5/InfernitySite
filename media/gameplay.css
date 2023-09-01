@@ -1,0 +1,92 @@
+.gameplay-slideshow{
+    background-image: url("images/slideshow-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 45%/50%;
+    width: 22vw;
+    height: 62vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameplay-slideshow-title{
+    color:#d89e5d;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.gameplay-slideshow-animated-border{
+    border-radius: 45%/50%;
+    width: 22vw;
+    height: 62vh;
+    top: 0;
+    position: absolute;
+    box-shadow: 0 0 8px 8px rgb(146, 21, 42);
+    animation: portal-animation 2s ease-in-out 0s infinite;
+}
+
+.gameplay-slideshow-wrapper{
+    width: 80%;
+    font-size: 3vh;
+    text-shadow: 0 0 8px red;
+    color: white;
+    font-weight: bold;
+}
+
+.gameplay-slideshow-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    margin: 3vh auto;
+}
+
+.gameplay-slideshow-button{
+    border-radius: 50%;
+    background-color: white;
+    width: 1vw;
+    height: 2vh;
+    position: relative;
+}
+
+.gameplay-slideshow-button-selected{
+    background-color: red;
+    border: 2px solid purple;
+}
+
+.gameplay-slideshow-button:hover{
+    cursor: pointer;
+}
+
+.gameplay-slideshow-button:nth-child(1){
+    bottom: 2vh;
+}
+
+.gameplay-slideshow-button:nth-child(3){
+    top: 1vh;
+}
+
+.gameplay-slideshow-button:nth-child(5){
+    bottom: 2vh;
+}
+
+
+@keyframes portal-animation{
+    0%{
+        box-shadow: 0 0 8px 8px rgb(146, 21, 42);
+        transform: scale(0.99);
+    }
+
+    50%{
+        box-shadow: 0 0 16px 12px rgb(99, 11, 87);
+        transform: scale(1);
+    }
+
+    100%{
+        box-shadow: 0 0 8px 8px rgb(146, 21, 42);
+        transform: scale(0.99);
+    }
+}

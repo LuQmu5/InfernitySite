@@ -1,0 +1,122 @@
+.main-characters-card{
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #42190c70;
+    font-family: 'Cormorant Garamond', serif;
+
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    margin-top: 3vh;
+}
+
+.main-characters-card img{
+    width: 50%;
+    height: auto;
+    opacity: 0.9;
+    filter: brightness(0.9);
+}
+
+.characters-card-text{
+    width: 50%;
+    padding: 2vh 3vw;
+}
+
+.characters-card-text h4{
+    font-size: 5vh;
+    margin: 2vh 0;
+    color:#d89e5d;
+}
+
+.characters-card-text p{
+    font-size: 3vh;
+    text-align: left;
+}
+
+.main-characters-card:nth-child(2n){
+    left: -2vw;
+}
+
+.main-characters-card:nth-child(3){
+    right: -2vw;
+}
+
+/*********BOSSES***************/
+
+
+.bosses-wrapper-info{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.selected-boss-info-tactic{
+    width: 100%;
+    font-size: 2.4vh;
+    padding-left: 2%;
+}
+
+.boss-list{
+    width: 45%;
+    text-align: left;
+    background-image: url("images/pergament-background.png");
+    background-position: top;
+    background-size: 100% 98%;;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    font-size: 2.4vh;
+}
+
+.boss-list ul{
+    margin-top: 25%;
+    margin-left: 3%;
+    color :#3d1f17;
+}
+
+.boss-list ul li{
+    margin: 3% 0;
+    font-weight: bold;
+}
+
+.boss-list ul li:hover{
+    cursor: pointer;
+    transform: translateX(5%);
+}
+
+.selected-boss-li{
+    color: #fef2f2;
+    text-shadow: 2px 0px 8px #3d1f17;
+}
+
+.selected-boss-info{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0;
+}
+
+.selected-boss-info-img{
+    width: 45%;
+    height: 60%;
+    box-shadow: 0px 0px 8px #dd3e12;
+}
+
+.selected-boss-info-header{
+    width: 50%;
+    font-size: 2.5vh;
+    padding: 10% 5% 0 5%;
+    position: relative;
+}
+
+.selected-boss-info-header-border{
+    position: absolute;
+    width: 160%;
+    height: 48vh;
+    top: -2vh;
+    left: -30%;
+}

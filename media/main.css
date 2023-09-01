@@ -1,0 +1,150 @@
+/*Styles*/
+@import url("nav-menu.css");
+@import url("header.css");
+@import url("main-info.css");
+@import url("gameplay.css");
+@import url("interface.css");
+@import url("lore.css");
+@import url("characters.css");
+@import url("sound.css");
+@import url("monetization.css");
+@import url("footer.css");
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@font-face {
+    font-family: DiabloFont;
+    src: url("fonts/diablofont.otf") format("opentype");
+}
+
+/*Main Styles*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    transition: 0.2s;
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+}
+
+.section-title{
+    font-size: 7vh;
+    text-shadow: 4px 4px 8px #3d1f17;
+    font-family: DiabloFont;
+    margin-bottom: 5vh;
+}
+
+.section-subtitle{
+    font-size: 6vh;
+    color:#ffaa49;
+    text-shadow: 4px 4px 8px black;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1vh solid #d89e5d;
+    border-bottom-right-radius: 20%;
+    width: 50%;
+    margin: 2vh auto;
+}
+
+.text-wrapper{
+    background-color: #42190c70;
+    padding: 4vh 2vw;
+    border-radius: 2%;
+}
+
+.item-span{
+    color:#d89e5d;
+    font-weight: bold;
+}
+
+.main-background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    filter: brightness(0.8);
+}
+
+body{
+    color: #fcdfdf;
+    text-align: center;
+}
+
+section{
+    padding: 8vh 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Dropdown menu*/
+
+.dropdown {
+    position: fixed;
+    bottom: 4vh;
+    right: 2vw;
+    transform: rotate(180deg);
+    width: 4vw;
+    height: 8vh;
+    background-image: url("images/down-arrow.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.dropdown .up-arrow{
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-content {
+    transform: rotate(180deg) scale(0) translateY(30vh);
+    position: absolute;
+    margin: auto;
+    top: 8vh;
+    background-color: #f1f1f1;
+    width: 90%;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    height: 8vh;
+}
+
+.dropdown-content a:hover img{ 
+    box-shadow: 0px 0px 8px white;
+}
+
+.dropdown:hover .dropdown-content {
+    transform: rotate(180deg) scale(1) translateY(0);
+}
+
+.dropdown-content a img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Scrollbar*/
+body::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: #3d1f17;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 0.3vw solid #692919;
+}

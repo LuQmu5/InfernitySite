@@ -1,0 +1,68 @@
+.music-cards{
+    margin-top: -5%;
+}
+
+.music-card{
+    width: 18%;
+    margin: 2%;
+    height: 30vh;
+    background-color: white;
+
+    background-position: center;
+    background-size: contain;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    font-size: 4vh;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px #e79090;
+    display: inline-block;
+    position: relative;
+    filter: sepia(50%);
+}
+
+.music-card:hover{
+    cursor: pointer;
+    filter: sepia(0%);
+    box-shadow: 0px 0px 48px #dd3e12;
+    transform: scale(1.1);
+}
+
+.music-card h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.music-card:nth-child(1){
+    background-image: url("images/greed.jpg");
+}
+
+.music-card:nth-child(2){
+    top: 5vh;
+    background-image: url("images/lust.jpg");
+}
+
+.music-card:nth-child(3){
+    top: 5vh;
+    background-image: url("images/wrath.jpg");
+}
+
+
+.music-card:nth-child(4){
+    background-image: url("images/envy.jpg");
+}
+
+.music-card:nth-child(5){
+    background-image: url("images/gluttony.jpg");
+}
+
+.music-card:nth-child(6){
+    top: 5vh;
+    background-image: url("images/despair.jpg");
+}
+
+.music-card:nth-child(7){
+    background-image: url("images/pride.jpg");
+}
